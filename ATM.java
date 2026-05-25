@@ -6,34 +6,37 @@ public class ATM {
 
 
         while (true) {
-            System.out.println("\n\t ***Welcome to Edubridge Bank*** ");
+            System.out.println("\n\t **Welcome to Edubridge Bank** ");
             System.out.println("\n\t 1. Deposite Money ");
             System.out.println("\n\t 2. Withdraw Money  ");
             System.out.println("\n\t 3. Check Balance  ");
             System.out.println("\n\t 4. Exit ");
-            System.out.println("\n\t Enter Your Choice");
+            System.out.print("\n\t 5. Enter Your Choice: ");
             Scanner sc = new Scanner(System.in);
             n = sc.nextInt();
             switch (n) {
+                
                 case 1:
 
-                    System.out.println("Enter your PIN");
+                    System.out.print("Enter your PIN: ");
                     pin=sc.nextInt();
-                    if(pin==1234)
+                    if(pin >=1000 && pin <=9999)
                     {
-                    System.out.println("\n\t Enter total amm to insert=");
+                    System.out.print("\n\t Enter total amt to insert= ");
                     amt = sc.nextInt();
                     cb = cb + amt;
                     System.out.println("\n\t Amt Deposited Succesfully.. Your current balance is " + cb);
                     }
-                    else{
+                    else
+                    {
                     System.out.println("Incorrect PIN");
                     }
                     break;
+                
                 case 2:
-                System.out.println("Enter your PIN");
+                System.out.print("Enter your PIN: ");
                 pin=sc.nextInt();
-                if(pin==1234)
+                if(pin >=1000 && pin <=9999)
                 {
                   if(cb==0)
                  {
@@ -41,10 +44,10 @@ public class ATM {
                  }
                     else
                  {
-                    System.out.println("\n\t Emter amm to withdraw= ");
+                    System.out.print("\n\t Enter amt to withdraw= ");
                     withdraw = sc.nextInt();
                     if ((cb - withdraw) < 500)
-                        System.out.println("\n\t Minimum balanace require(500) ");
+                        System.out.println("\n\t Minimum balanace required(500) ");
                     else
                         cb = cb - withdraw;
                         System.out.println("\n\tPlease collect your money("+withdraw+")");
@@ -57,11 +60,11 @@ public class ATM {
                     break;
                 
                 case 3:
-                System.out.println("Enter you PIN");
+                System.out.print("Enter you PIN: ");
                 pin=sc.nextInt();
-                if(pin==1234)
+                if(pin >=1000 && pin <=9999)
                 {
-                    System.out.println("Your current balance is = " + cb);
+                    System.out.print("Your current balance is = " + cb);
                 }
                     else {System.out.println("Incorrect PIN");}
                     break;
