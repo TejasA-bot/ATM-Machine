@@ -20,7 +20,7 @@ public class ATM {
 
                     System.out.print("Enter your PIN: ");
                     pin=sc.nextInt();
-                    if(pin >=1000 && pin <=9999)
+                    if(pin==1234)
                     {
                     System.out.print("\n\t Enter total amt to insert= ");
                     amt = sc.nextInt();
@@ -36,7 +36,7 @@ public class ATM {
                 case 2:
                 System.out.print("Enter your PIN: ");
                 pin=sc.nextInt();
-                if(pin >=1000 && pin <=9999)
+                if(pin==1234)
                 {
                   if(cb==0)
                  {
@@ -62,7 +62,7 @@ public class ATM {
                 case 3:
                 System.out.print("Enter you PIN: ");
                 pin=sc.nextInt();
-                if(pin >=1000 && pin <=9999)
+                if(pin==1234)
                 {
                     System.out.print("Your current balance is = " + cb);
                 }
